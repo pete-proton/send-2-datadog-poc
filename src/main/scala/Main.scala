@@ -15,8 +15,8 @@ object Main extends App {
   }
   // Ensure that metrics are reported before the application exits
 
-  val stopFuture = Kamon.stop()
-  Await.result(stopFuture, 10.seconds)
+  //val stopFuture = Kamon.stop()
+  //Await.result(stopFuture, 10.seconds)
   println("done")
 
 }
