@@ -10,7 +10,7 @@ object Main extends App {
 
   for(i <- 1 to 10) {
     println(s"i: $i")
-    requestCounter.increment()
+    requestCounter.increment(999999)
     Thread.sleep(100) // Wait for a second between increments
   }
   // Ensure that metrics are reported before the application exits
