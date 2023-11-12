@@ -14,7 +14,9 @@ object Main extends App {
     Thread.sleep(100) // Wait for a second between increments
   }
   // Ensure that metrics are reported before the application exits
-  val stopFuture = Kamon.stopModules()
+
+  val stopFuture = Kamon.stop()
   Await.result(stopFuture, 10.seconds)
   println("done")
+
 }
