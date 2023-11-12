@@ -4,7 +4,7 @@
     <property name="LoggingDir" value="./log/" />
 
     <appender name="sharaku" class="ch.qos.logback.core.FileAppender">
-        <append>true</append>
+        <append>false</append>
 
         <file>${LoggingDir}sharaku.log</file>
         <encoder>
