@@ -33,3 +33,9 @@ enablePlugins(JavaAppPackaging)
 //javaOptions in run ++= Seq(
 //  s"-javaagent:${findKanelaAgent.value}"
 //)
+
+fork in run := true
+
+javaOptions in run ++= Seq(
+  "-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"
+)
