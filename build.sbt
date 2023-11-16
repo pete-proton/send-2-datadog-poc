@@ -36,6 +36,6 @@ enablePlugins(JavaAppPackaging)
 
 fork in run := true
 
-javaOptions in run ++= Seq(
-  "-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"
-)
+//javaOptions in run ++= Seq(
+//  "-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005"
+//)
